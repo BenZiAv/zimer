@@ -16,7 +16,7 @@ const ZimmerPage = () => {
     {
       name: 'Zimmer 1',
       description: 'This is the description of Zimmer 1.',
-      image: 'zimmer1.jpg',
+      image: './../photos/zimer1.jpg',
       price: '$100'
     },
     {
