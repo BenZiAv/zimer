@@ -1,0 +1,6 @@
+.background-image {
+    background-image: url('./images/zimer1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* נתן גובה רלוונטי */
+  }

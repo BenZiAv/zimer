@@ -17,7 +17,7 @@ const ZimmerPage = () => {
     {
       name: 'Zimmer 1',
       description: 'צימר יפה בצפון רמת הגולן',
-      image: <MyImages/>,
+      image: 'https://th.bing.com/th/id/OIP.ev7ul2J_PkeFS3-wCOtdAQHaEc?pid=ImgDet&rs=1',
       price: '$100'
     },
     {
