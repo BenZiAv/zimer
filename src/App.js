@@ -1,4 +1,5 @@
 import React from 'react';
+import photos from './photos;
 
 const ZimmerCard = ({ name, description, image, price }) => {
   return (
@@ -16,7 +17,7 @@ const ZimmerPage = () => {
     {
       name: 'Zimmer 1',
       description: 'This is the description of Zimmer 1.',
-      image: './../photos/zimer1.jpg',
+      image: './/zimer1.jpg',
       price: '$100'
     },
     {
