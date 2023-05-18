@@ -1,22 +1,47 @@
 import React from 'react';
+import styled from 'styled-components';
+
 import Header from './Header';
 import Banner from './Banner';
 import Content from './Content';
 import Footer from './Footer';
 
+
 const HomePage = () => {
   return (
-    <div>
-      <h1>Welcome to the Home Page</h1>
-      {/* כאן תוסיף את הקומפוננטות הנדרשות עבור העמוד */}
-    </div>
-    // <div>
-    //   <Header />
-    //   <Banner />
-    //   <Content />
-    //   <Footer />
-    // </div>
+    <Wrapper>
+      <Title>Welcome to the Home Page</Title>
+      {/* הוסף קומפוננטות נוספות כאן */}
+    </Wrapper>
   );
 };
+
+// eslint-disable-next-line no-undef
+const Wrapper = styled.div`
+  /* עיצוב הכותרת */
+  h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+`;
+
+// eslint-disable-next-line no-undef
+const Title = styled.h1`
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+`;
+
+// const HomePage = () => {
+//   return (
+//     <div>
+//       <Header />
+//       <Banner />
+//       <Content />
+//       <Footer />
+//     </div>
+//   );
+// };
 
 export default HomePage;
