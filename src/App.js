@@ -1,5 +1,5 @@
 import React from 'react';
-import image from './images';
+import MyImages from './MyImages';
 
 const ZimmerCard = ({ name, description, image, price }) => {
   return (
@@ -16,8 +16,8 @@ const ZimmerPage = () => {
   const zimmers = [
     {
       name: 'Zimmer 1',
-      description: 'This is the description of Zimmer 1.',
-      image: './image/zimer1.jpg',
+      description: 'צימר יפה בצפון רמת הגולן',
+      image: <MyImages/>,
       price: '$100'
     },
     {
@@ -26,7 +26,12 @@ const ZimmerPage = () => {
       image: 'zimmer2.jpg',
       price: '$150'
     },
-    // Add more zimmers as needed
+    {
+      name: 'Zimmer 3',
+      description: 'This is the description of zimmer3',
+      image: '',
+      price: '$150'
+    }
   ];
 
   return (
