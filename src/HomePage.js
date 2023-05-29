@@ -33,15 +33,15 @@ const Title = styled.h1`
   margin-bottom: 20px;
 `;
 
-// const HomePage = () => {
-//   return (
-//     <div>
-//       <Header />
-//       <Banner />
-//       <Content />
-//       <Footer />
-//     </div>
-//   );
-// };
+const HomePage = () => {
+  return (
+    <div>
+      <Header />
+      <Banner />
+      <Content />
+      <Footer />
+    </div>
+  );
+};
 
 export default HomePage;
