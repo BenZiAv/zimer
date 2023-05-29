@@ -7,15 +7,6 @@ import Content from './Content';
 import Footer from './Footer';
 
 
-const HomePage = () => {
-  return (
-    <Wrapper>
-      <Title>Welcome to the Home Page</Title>
-      {/* הוסף קומפוננטות נוספות כאן */}
-    </Wrapper>
-  );
-};
-
 // eslint-disable-next-line no-undef
 const Wrapper = styled.div`
   /* עיצוב הכותרת */
