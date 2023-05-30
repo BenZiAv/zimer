@@ -1,0 +1,18 @@
+.header {
+    background: blue;
+    color: white;
+  }
+  
+  .banner {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .content {
+    padding: 10px;
+  }
+  
+  .footer {
+    background: gray;
+    color: white;
+  }

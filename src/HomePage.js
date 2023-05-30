@@ -3,32 +3,17 @@ import Header from './Header';
 import Banner from './Banner';
 import Content from './Content';
 import Footer from './Footer';
+import './HomePage.css';
 
 
-// eslint-disable-next-line no-undef
-const Wrapper = styled.div`
-  /* עיצוב הכותרת */
-  h1 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-`;
-
-// eslint-disable-next-line no-undef
-const Title = styled.h1`
-  color: #333;
-  font-size: 24px;
-  margin-bottom: 20px;
-`;
 
 const HomePage = () => {
   return (
     <div>
-      <Header />
-      <Banner />
-      <Content />
-      <Footer />
+      <Header className="header" />
+      <Banner className="banner" />
+      <Content className="content" />
+      <Footer className="footer" />
     </div>
   );
 };
