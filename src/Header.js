@@ -2,7 +2,8 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <header>
+    <div>
+      <header>
       <img src="logo.png" alt="Logo" />
       <nav>
         <ul>
@@ -14,6 +15,7 @@ const Header = () => {
       </nav>
       {/* אלמנטים נוספים, לדוגמה כפתורי התחברות או חיפוש */}
     </header>
+    </div>
   );
 };
 
