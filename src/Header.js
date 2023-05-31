@@ -2,20 +2,28 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <div>
-      <header>
-      <img src="logo.png" alt="Logo" />
+    <header>
       <nav>
         <ul>
-          <li><a href="/HomePage">Home</a></li>
-          <li><a href="/About">About</a></li>
-          <li><a href="/Zimmers">Zimmers</a></li>
-          <li><a href="/Contact">Contact</a></li>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <a href="/services">Services</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
         </ul>
       </nav>
-      {/* אלמנטים נוספים, לדוגמה כפתורי התחברות או חיפוש */}
+      <div>
+        <input type="text" placeholder="Search" />
+        <button>Search</button>
+      </div>
     </header>
-    </div>
   );
 };
 
