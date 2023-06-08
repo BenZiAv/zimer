@@ -1,6 +1,13 @@
+.body1 {
+  background-image: url("./images/zimer1.jpg");
+}
+
 .header {
-    background: blue;
+    background: rgb(163, 163, 226);
+    text-align: center;
     color: rgb(72, 25, 159);
+    font-size: xx-large;
+    background-image: url("./images/zimer1.jpg");
   }
   
   .banner {
