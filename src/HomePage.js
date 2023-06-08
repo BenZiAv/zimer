@@ -12,7 +12,7 @@ const HomePage = () => {
     <div className='body1'>
       
       
-      {/* <Header className="header" /> */}
+      <Header className="header" />
       {/* <Banner className="banner" />
       <Content className="content" />
       <Footer className="footer" /> */}
