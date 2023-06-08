@@ -1,6 +1,6 @@
 .header {
     background: blue;
-    color: white;
+    color: rgb(72, 25, 159);
   }
   
   .banner {
@@ -14,5 +14,5 @@
   
   .footer {
     background: gray;
-    color: white;
+    color: rgb(87, 61, 167);
   }
