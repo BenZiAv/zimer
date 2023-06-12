@@ -2,7 +2,9 @@
   background-image: url("./images/zimer1.jpg");
   height: 100dvh;
   width: 100dvw;
-  opacity: 0.75;
+  opacity: 0.43;
+  background-repeat:no-repeat;
+  background-size:cover;
 }
 
 .header {
