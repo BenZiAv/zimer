@@ -2,22 +2,33 @@
   background-image: url("./images/zimer1.jpg");
   height: 100dvh;
   width: 100dvw;
-  opacity: 0.43;
+  opacity: 80%;
   background-repeat:no-repeat;
   background-size:cover;
 }
 
 .header {
-    background: rgb(163, 163, 226);
-    text-align: center;
-    color: rgb(1, 1, 2);
-    font-size: xx-large;
     
+    text-align: center;
+    color: aqua;
+    font-size: xx-large;
+  }
+
+  .menu_btn{
+    font-size: xx-large;
+    background: none;
+    border-style: hidden;
+    color: aqua;
+  }
+  .nav{
+    font-size: xx-large;
+    color: aqua;
   }
   
-  .banner {
+  .sidebar {
     font-size: 24px;
     font-weight: bold;
+    
   }
   
   .content {
