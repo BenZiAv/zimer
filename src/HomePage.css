@@ -10,7 +10,7 @@
 .header {
     
     text-align: center;
-    color: aqua;
+    color:chartreuse;
     font-size: xx-large;
   }
 
@@ -22,13 +22,12 @@
   }
   .nav{
     font-size: xx-large;
+    display: flex;
+    margin-right: 500px;
     color: aqua;
-  }
-  
-  .sidebar {
-    font-size: 24px;
-    font-weight: bold;
-    
+    border: 2px;
+    border-color: chartreuse;
+    border-style: dotted;
   }
   
   .content {
