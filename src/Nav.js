@@ -8,9 +8,10 @@ const Nav = () => {
   const handleNavToggle = () => {
     setIsNavOpen(!isNavOpen);
   };
-
+  
   const handlePageClick = () => {
-    setActivePage('about');
+    // eslint-disable-next-line no-undef
+    setActivePage('About');
     setIsNavOpen(false);
   };
 
