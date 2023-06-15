@@ -18,13 +18,13 @@
     font-size: xx-large;
     background: none;
     border-style: hidden;
-    color: aqua;
+    color: rgb(0, 0, 0);
   }
   .nav{
     font-size: xx-large;
     display: flex;
     margin-right: 500px;
-    color: aqua;
+    color: rgb(0,0,0);
     border: 2px;
     border-color: chartreuse;
     border-style: dotted;
