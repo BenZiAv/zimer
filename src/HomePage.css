@@ -1,10 +1,13 @@
-.body1 {
-    background-image: url("./images/villa-4555824_1280.jpg"); /* background */
+#root {
+  background-image: url("./images/villa-4555824_1280.jpg"); /* background */
     background-repeat:no-repeat;
     background-size:cover;
     height: 100dvh;
     width: 100dvw;
-    flood-opacity: 100%;
+    opacity: 80%;
+}
+.body1{
+  
 }
 
 .header {
@@ -30,10 +33,9 @@
   background: local;
 }
 
-.ul{
-  list-style-type: none;
-}
+
 .btn_ul{
+  padding-top: 5vh;
   margin-inline: 13dvh;
   background: none;
   color: white;

@@ -1,13 +1,11 @@
 import React from 'react';
 
 const About = ({ activePage }) => {
-    if (activePage !== 'About') {
-      return null; // Render nothing if active page is not 'about'
-    }
-
+    
     return (
         <div>
-            <h1 className='about'>Who Are we</h1>
+            <h1 className='About'>Who Are we</h1>
+            <a>we have 2 couples units and 3 family units</a>
         </div>
     );
 };
