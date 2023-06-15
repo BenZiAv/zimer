@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import HomePage from './HomePage';
 import About from './About';
 
 const Nav = () => {
@@ -16,19 +15,21 @@ const Nav = () => {
   };
 
   return (
-    <div>
+    <span>
       <button className='menu_btn' onClick={handleNavToggle}>Menu</button>
       {isNavOpen && (
         <nav className='nav'>
           <ul className='ul'>
-            <li onClick={handlePageClick}>Home</li>
-            <li onClick={handlePageClick}>About</li>
-            <li onClick={handlePageClick}>Services</li>
-            <li onClick={handlePageClick}>Contact</li>
+            <button className='btn_ul' onClick={handlePageClick}>Home</button>
+            <button className='btn_ul' onClick={handlePageClick}>About</button>
+            <button className='btn_ul' onClick={handlePageClick}>Gallery</button>
+            <button className='btn_ul' onClick={handlePageClick}>Contact</button>
+            <button className='btn_ul' onClick={handlePageClick}>Rate Us</button>
           </ul>
         </nav>
       )}
-    </div>
+    </span>
+    
   );
 };
 

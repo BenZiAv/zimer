@@ -1,8 +1,7 @@
 import React from 'react';
-import Nav from './Nav.js';
 
 const About = ({ activePage }) => {
-    if (activePage !== 'about') {
+    if (activePage !== 'About') {
       return null; // Render nothing if active page is not 'about'
     }
 

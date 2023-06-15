@@ -1,45 +1,51 @@
 .body1 {
-  background-image: url("./images/villa-4555824_1280.jpg"); /* background */
-  height: 100dvh;
-  width: 100dvw;
-  opacity: 80%;
-  background-repeat:no-repeat;
-  background-size:cover;
-  
+    background-image: url("./images/villa-4555824_1280.jpg"); /* background */
+    background-repeat:no-repeat;
+    background-size:cover;
+    height: 100dvh;
+    width: 100dvw;
+    flood-opacity: 100%;
 }
 
 .header {
-    
+    text-shadow: 2px 3px 10px white;
     text-align: center;
     color:chartreuse;
     font-size: xx-large;
   }
 
-  .menu_btn{
-    font-size: xx-large;
-    background: none;
-    border-style: hidden;
-    color: white;
-  }
-  .nav{
-    font-size: xx-large;
-    display: flex;
-    margin-right: 500px;
-    color: white;
-    border: 2px;
-    border-color: chartreuse;
-    border-style: dotted;
-  }
+.menu_btn{
+  font-size: xx-large;
+  margin-left: 2%;
+  padding: 20px auto;
+  text-shadow: 2px 5px 8px chartreuse;
+  background: none;
+  border-style: hidden;
+  color: white;
+}
+.nav{
+  font-size: xx-large;
+  display: flex;
+  color: white;
+  background: local;
+}
 
-  .ul{
-    list-style-type: none;
-  }
+.ul{
+  list-style-type: none;
+}
+.btn_ul{
+  margin-inline: 13dvh;
+  background: none;
+  color: white;
+  border-style: none;
+  font-size: xx-large;
+  text-shadow: 2px 5px 8px chartreuse;
+}
+
+.content {
   
-  .content {
-    padding: 10px;
-  }
+}
+
+.footer {
   
-  .footer {
-    background: gray;
-    color: rgb(87, 61, 167);
-  }
+}
