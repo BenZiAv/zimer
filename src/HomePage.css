@@ -5,6 +5,7 @@
   opacity: 80%;
   background-repeat:no-repeat;
   background-size:cover;
+  
 }
 
 .header {
@@ -18,16 +19,20 @@
     font-size: xx-large;
     background: none;
     border-style: hidden;
-    color: rgb(0, 0, 0);
+    color: white;
   }
   .nav{
     font-size: xx-large;
     display: flex;
     margin-right: 500px;
-    color: rgb(0,0,0);
+    color: white;
     border: 2px;
     border-color: chartreuse;
     border-style: dotted;
+  }
+
+  .ul{
+    list-style-type: none;
   }
   
   .content {

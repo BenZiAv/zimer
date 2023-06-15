@@ -9,9 +9,9 @@ const Nav = () => {
     setIsNavOpen(!isNavOpen);
   };
   
-  const handlePageClick = () => {
+  const handlePageClick = (page) => {
     // eslint-disable-next-line no-undef
-    setActivePage('About');
+    setActivePage(page);
     setIsNavOpen(false);
   };
 
@@ -20,7 +20,7 @@ const Nav = () => {
       <button className='menu_btn' onClick={handleNavToggle}>Menu</button>
       {isNavOpen && (
         <nav className='nav'>
-          <ul>
+          <ul className='ul'>
             <li onClick={handlePageClick}>Home</li>
             <li onClick={handlePageClick}>About</li>
             <li onClick={handlePageClick}>Services</li>
