@@ -3,6 +3,7 @@ import Header from './Header';
 import Content from './Content';
 import Footer from './Footer';
 import './HomePage.css';
+import injectComponent from './Nav';
 
 
 
@@ -12,8 +13,8 @@ const HomePage = () => {
       
       
       <Header className="header" />
-      {/* <Content className="content" />
-      <Footer className="footer" /> */}
+      <Content className="content" />
+      {/* <Footer className="footer" /> */ }
     </div>
   );
 };

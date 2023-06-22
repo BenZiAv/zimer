@@ -11,7 +11,7 @@ const Nav = ({setActivePage}) => {
   const handlePageClick = () => {
     setIsNavOpen(false);
     let injectComponent = (component) => {
-      return <div className="" >
+      return <div className="content_inject" >
         <About/>
       </div> 
     };
