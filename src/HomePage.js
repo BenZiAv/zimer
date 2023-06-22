@@ -13,7 +13,7 @@ const HomePage = () => {
       
       
       <Header className="header" />
-      <Content className="content" />
+      
       {/* <Footer className="footer" /> */ }
     </div>
   );

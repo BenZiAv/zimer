@@ -6,8 +6,10 @@
     width: 100dvw;
     opacity: 80%;
 }
-.body1{
-  
+.About{
+  background-color: aliceblue;
+  opacity: 50%;
+  text-align: center;
 }
 
 .header {

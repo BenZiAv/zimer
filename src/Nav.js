@@ -1,37 +1,47 @@
 import React, { useState } from 'react';
 import About from './About';
 
-const Nav = ({setActivePage}) => {
+const SourceComponent = ({ setIsNavOpen, setContent }) => {
+  const handlePageClick = () => {
+    setIsNavOpen(false);
+    setContent(<About />);
+  };
+
+  return (
+    <nav className='nav'>
+      <button abc='def' className='btn_ul' onClick={handlePageClick}>Home</button>
+      <button className='btn_ul' onClick={handlePageClick}>About</button>
+      <button className='btn_ul' onClick={handlePageClick}>Gallery</button>
+      <button className='btn_ul' onClick={handlePageClick}>Contact</button>
+      <button className='btn_ul' onClick={handlePageClick}>Rate Us</button>
+    </nav>
+  );
+};
+
+const Nav = ({ setActivePage }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [content, setContent] = useState(null);
 
   const handleNavToggle = () => {
     setIsNavOpen(!isNavOpen);
-  };
-  
-  const handlePageClick = () => {
-    setIsNavOpen(false);
-    let injectComponent = (component) => {
-      return <div className="content_inject" >
-        <About/>
-      </div> 
-    };
   };
 
   return (
     <span>
       <button className='menu_btn' onClick={handleNavToggle}>Menu</button>
       {isNavOpen && (
-        <nav className='nav'>
-          <button className='btn_ul' onClick={handlePageClick}>Home</button>
-          <button className='btn_ul' onClick={handlePageClick}>About</button>
-          <button className='btn_ul' onClick={handlePageClick}>Gallery</button>
-          <button className='btn_ul' onClick={handlePageClick}>Contact</button>
-          <button className='btn_ul' onClick={handlePageClick}>Rate Us</button>
-        </nav>
+        <SourceComponent setIsNavOpen={setIsNavOpen} setContent={setContent} />
       )}
+      {content}
     </span>
-    
   );
 };
 
 export default Nav;
+
+
+
+
+
+
+
