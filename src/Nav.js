@@ -2,18 +2,48 @@ import React, { useState } from 'react';
 import About from './About';
 
 const SourceComponent = ({ setIsNavOpen, setContent }) => {
-  const handlePageClick = () => {
+  const handlePageClick = (buttonId) => {
     setIsNavOpen(false);
-    setContent(<About />);
+    
+    switch (buttonId) {
+      case 'login':
+        setContent(<div>Login Content</div>);
+        break;
+      case 'about':
+        setContent(<About />);
+        break;
+      case 'gallery':
+        setContent(<div>Gallery Content</div>);
+        break;
+      case 'contact':
+        setContent(<div>Contact Content</div>);
+        break;
+      case 'rate_us':
+        setContent(<div>Rate Us Content</div>);
+        break;
+      default:
+        setContent(null);
+        break;
+    }
   };
 
   return (
     <nav className='nav'>
-      <button abc='def' className='btn_ul' onClick={handlePageClick}>Home</button>
-      <button className='btn_ul' onClick={handlePageClick}>About</button>
-      <button className='btn_ul' onClick={handlePageClick}>Gallery</button>
-      <button className='btn_ul' onClick={handlePageClick}>Contact</button>
-      <button className='btn_ul' onClick={handlePageClick}>Rate Us</button>
+      <button id='login' className='btn_ul' onClick={() => handlePageClick('home')}>
+        Login
+      </button>
+      <button id='about' className='btn_ul' onClick={() => handlePageClick('about')}>
+        About
+      </button>
+      <button id='gallery' className='btn_ul' onClick={() => handlePageClick('gallery')}>
+        Gallery
+      </button>
+      <button id='contact' className='btn_ul' onClick={() => handlePageClick('contact')}>
+        Contact
+      </button>
+      <button id='rate_us' className='btn_ul' onClick={() => handlePageClick('rate_us')}>
+        Rate Us
+      </button>
     </nav>
   );
 };

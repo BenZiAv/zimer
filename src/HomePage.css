@@ -4,12 +4,13 @@
     background-size:cover;
     height: 100dvh;
     width: 100dvw;
-    opacity: 80%;
+    opacity: 85%;
 }
 .About{
   background-color: aliceblue;
   opacity: 50%;
   text-align: center;
+
 }
 
 .header {
@@ -37,17 +38,13 @@
 
 
 .btn_ul{
-  padding-top: 5vh;
-  margin-inline: 13dvh;
+  padding-top: 5dvh;
+  margin: auto;
   background: none;
-  color: white;
+  color: whitesmoke;
   border-style: none;
   font-size: xx-large;
   text-shadow: 2px 5px 8px chartreuse;
-}
-
-.content {
-  
 }
 
 .footer {
