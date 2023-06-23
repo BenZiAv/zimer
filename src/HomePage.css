@@ -6,7 +6,47 @@
     width: 100dvw;
     opacity: 85%;
 }
-.About{
+/* .login{
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+} */
+
+/*login */
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.inputWrapper {
+  margin-bottom: 1rem;
+}
+
+.label {
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+.about{
   background-color: aliceblue;
   opacity: 50%;
   text-align: center;

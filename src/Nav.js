@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import About from './About';
+import LoginForm from './Login';
 
 const SourceComponent = ({ setIsNavOpen, setContent }) => {
   const handlePageClick = (buttonId) => {
@@ -7,19 +8,19 @@ const SourceComponent = ({ setIsNavOpen, setContent }) => {
     
     switch (buttonId) {
       case 'login':
-        setContent(<div>Login Content</div>);
+        setContent(<span className='login'><LoginForm/></span>);
         break;
       case 'about':
-        setContent(<About />);
+        setContent(<span className='about'><About/></span>);
         break;
       case 'gallery':
-        setContent(<div>Gallery Content</div>);
+        setContent(<span>Gallery Content</span>);
         break;
       case 'contact':
-        setContent(<div>Contact Content</div>);
+        setContent(<span>Contact Content</span>);
         break;
       case 'rate_us':
-        setContent(<div>Rate Us Content</div>);
+        setContent(<span>Rate Us Content</span>);
         break;
       default:
         setContent(null);
@@ -29,7 +30,7 @@ const SourceComponent = ({ setIsNavOpen, setContent }) => {
 
   return (
     <nav className='nav'>
-      <button id='login' className='btn_ul' onClick={() => handlePageClick('home')}>
+      <button id='login' className='btn_ul' onClick={() => handlePageClick('login')}>
         Login
       </button>
       <button id='about' className='btn_ul' onClick={() => handlePageClick('about')}>

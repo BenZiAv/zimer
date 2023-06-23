@@ -3,9 +3,9 @@ import React from 'react';
 const About = ({ activePage }) => {
     
     return (
-        <div className='About'>
+        <div>
             <h1 >Who Are we</h1>
-            <a>we have 2 couples units and 3 family units</a>
+            <h3>we have 2 couples units and 3 family units</h3>
         </div>
     );
 };
