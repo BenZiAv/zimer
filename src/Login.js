@@ -23,7 +23,7 @@ const LoginForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className='form'> Manager Login
+    <form onSubmit={handleSubmit} className='form'> <h1 className='h1_login'>Manager Login</h1>
       <div className='inputWrapper'>
         <label htmlFor="username" className='label'>Username:</label>
         <input

@@ -22,9 +22,15 @@
   max-width: 300px;
   margin: 0 auto;
 }
+.h1_login {
+  color: white;
+  text-shadow: 2px 2px 8px chartreuse;
+  text-decoration: underline;
+}
 
 .inputWrapper {
   margin-bottom: 1rem;
+  color: white;
 }
 
 .label {
@@ -45,12 +51,25 @@
   cursor: pointer;
 }
 
+.button_submit{
+  border-color: chartreuse;
+  border-radius: 5px 5px 5px 5px;
+  background-color: chartreuse;
+  color: black;
+  border-style: hidden;
+}
+
 
 .about{
-  background-color: aliceblue;
-  opacity: 50%;
   text-align: center;
+  color: white;
+  text-shadow: 2px 5px 8px chartreuse;
+}
 
+.h1_about{
+  color: white;
+  text-shadow: 2px 2px 8px chartreuse;
+  text-decoration: underline;
 }
 
 .header {
