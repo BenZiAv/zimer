@@ -1,19 +1,41 @@
 #root {
   background-image: url("./images/villa-4555824_1280.jpg"); /* background */
     background-repeat:no-repeat;
-    background-size:cover;
+    background-size:auto;
     height: 100dvh;
     width: 100dvw;
     opacity: 85%;
 }
-/* .login{
-  text-align: center;
-  color: white;
+
+/* gallery */
+.gallery {
+  width: 80%;
+  padding-left: 20%;
+}
+
+.gallery-container {
+  max-width: 62%;
+  overflow: hidden;
+}
+
+.gallery-image {
+  width: 80%;
+  height: auto;
+}
+
+.controls-container {
   display: flex;
-  flex-direction: column;
-  max-width: 300px;
-  margin: 0 auto;
-} */
+  justify-content: center;
+}
+
+.scroll-controls {
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-controls button {
+  margin-left: 10px;
+}
 
 /*login */
 .form {

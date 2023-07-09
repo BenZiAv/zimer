@@ -9,6 +9,15 @@ const ZoomControls = ({ onZoomIn, onZoomOut }) => {
   );
 };
 
+const ScrollControls = ({ onScrollLeft, onScrollRight }) => {
+  return (
+    <div className="scroll-controls">
+      <button onClick={onScrollLeft}>Scroll Left</button>
+      <button onClick={onScrollRight}>Scroll Right</button>
+    </div>
+  );
+};
+
 const Gallery = ({ images }) => {
   const [zoom, setZoom] = useState(1);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -33,21 +42,18 @@ const Gallery = ({ images }) => {
 
   return (
     <div className="gallery">
-         
-        <span className='image_buttons'>
-            <button onClick={handleScrollLeft}>Scroll Left</button>
-            <button onClick={handleScrollRight}>Scroll Right</button>
-            <ZoomControls onZoomIn={handleZoomIn} onZoomOut={handleZoomOut} />
-        </span>
-        
-        <div className="gallery-container" style={{ transform: `scale(${zoom})` }}>
-            <img
-            src={images[currentImageIndex]}
-            alt={`Image ${currentImageIndex}`}
-            className="gallery-image"
-            />
-        </div>
-        
+      <div className="gallery-container" style={{ transform: `scale(${zoom})` }}>
+        <img
+          src={images[currentImageIndex]}
+          alt={`Image ${currentImageIndex}`}
+          className="gallery-image"
+          style={{ maxWidth: '100%', maxHeight: '100%', width: 'auto', height: 'auto' }}
+        />
+      </div>
+      <div className="controls-container">
+        <ZoomControls onZoomIn={handleZoomIn} onZoomOut={handleZoomOut} />
+        <ScrollControls onScrollLeft={handleScrollLeft} onScrollRight={handleScrollRight} />
+      </div>
     </div>
   );
 };
