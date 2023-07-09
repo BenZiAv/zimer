@@ -6,4 +6,4 @@ db.on('error',console.error.bind(console, 'connected error:'));
 db.once('open', () => {
   console.log("mongo conncted")
 });
-module.export = db;
+module.export = db;//connect
