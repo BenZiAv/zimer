@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 import About from './About';
 import LoginForm from './Login';
+import Gallery from './Gallery';
+
+const images = [
+  'https://my.weekend.co.il/Templates/customerimages/20524/gallery/image_20524_6be150a25cfb4f5fa11648fce41314f1.jpg',
+  'https://my.weekend.co.il/Templates/customerimages/20524/gallery/image_20524_6219b79ab8fb494fac8f3861d2cc6a00.jpg',
+  'https://zimmers-at-the-forest-villa-amirim.booked.co.il/data/Photos/OriginalPhoto/7767/776740/776740612/Zimmers-At-The-Forest-Amirim-Exterior.JPEG',
+  // Add more image URLs here
+];
 
 const SourceComponent = ({ setIsNavOpen, setContent }) => {
   const handlePageClick = (buttonId) => {
@@ -14,7 +22,7 @@ const SourceComponent = ({ setIsNavOpen, setContent }) => {
         setContent(<span className='about'><About/></span>);
         break;
       case 'gallery':
-        setContent(<span>Gallery Content</span>);
+        setContent(<span className='gallery'><Gallery images={images} /></span>);
         break;
       case 'contact':
         setContent(<span>Contact Content</span>);
