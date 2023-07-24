@@ -1,0 +1,54 @@
+.loader {
+    width: 120px;
+    height: 120px;
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px dotted #3498db;
+    border-left: 10px dotted #3fde30;
+    border-right: 10px dotted #30c7de;
+    border-bottom: 10px dotted rgb(220, 59, 59);
+    // animation-name: cycle-loder;
+    // animation-duration: 1s;
+    // animation-timing-function:linear ;
+    // animation-iteration-count: infinite;
+    animation: cycle-loder 1s ease-in-out infinite;
+    position: fixed;
+    top: 35%;
+    left: 45%;
+    z-index: 9;
+  }
+  
+  @keyframes cycle-loder {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loader1 {
+    width: 120px;
+    height: 120px;
+    border: 15px solid rgb(226, 219, 219);
+    border-radius: 50%;
+    border-top: 15px solid rgb(33, 47, 173);
+    // animation-name: cycle-loder;
+    // animation-duration: 1s;
+    // animation-timing-function:linear ;
+    // animation-iteration-count: infinite;
+    animation: doted_cycle-loder 1s ease-in-out infinite;
+    position: fixed;
+    top: 35%;
+    left: 45%;
+    z-index: 9;
+  }
+  
+  @keyframes doted_cycle-loder {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
