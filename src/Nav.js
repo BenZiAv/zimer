@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import About from './About';
 import LoginForm from './Login';
 import Gallery from './Gallery';
+import Contact from './Contact';
 
 const images = [
   'https://my.weekend.co.il/Templates/customerimages/20524/gallery/image_20524_6be150a25cfb4f5fa11648fce41314f1.jpg',
@@ -25,7 +26,7 @@ const SourceComponent = ({ setIsNavOpen, setContent }) => {
         setContent(<span className='gallery'><Gallery images={images} /></span>);
         break;
       case 'contact':
-        setContent(<span>Contact Content</span>);
+        setContent(<span className='contact'><Contact/></span>);
         break;
       case 'rate_us':
         setContent(<span>Rate Us Content</span>);
