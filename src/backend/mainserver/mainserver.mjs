@@ -21,7 +21,7 @@ mainserver.use(clientorder);
 mainserver.use(disconnectFromMD);
 mainserver.use(connectingToMD);
 
- ConnectingToMDB.ConnectingToMDB.connent();
+// ConnectingToMDB.ConnectingToMDB.connent();
 
 mainserver.get("/", (req, res) => {
   console.log("mainserver is running");
