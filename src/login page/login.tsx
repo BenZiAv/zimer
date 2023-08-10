@@ -4,7 +4,7 @@ import "./login.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import loginimg from "../assets/imgs/connect-with-your-friends-via-secure-messenger.jpg";
 import { useDispatch } from "react-redux";
-import { SET } from "../redux/userData.mjs";
+import { SET } from "../redux/reducer/userData.mjs";
 import Footer from "../footer/footer";
 import Loader1 from "../loader/loader1";
 
