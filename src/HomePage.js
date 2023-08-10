@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header';
-// import Footer from './Footer';
+ import Footer from './Footer';
 import './HomePage.css';
 
 
@@ -11,7 +11,7 @@ const HomePage = () => {
       
       <Header className="header" />
       
-      {/* <Footer className="footer" /> */ }
+      { <Footer className="footer" />  }
     </div>
   );
 };
