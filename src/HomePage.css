@@ -1,10 +1,9 @@
 #root {
   background-image: url("./images/villa-4555824_1280.jpg"); /* background */
-    background-repeat:no-repeat;
-    background-size:auto;
-    height: 100dvh;
-    width: 100dvw;
-    opacity: 85%;
+  background-repeat:round;
+  background-size:auto;
+  height: 100dvh;
+  opacity: 85%;
 }
 
 /* gallery */
