@@ -7,7 +7,7 @@ import signuprouter from "../router/signup.mjs";
 import loginrouter from "../router/login.mjs";
 import productinfo from "../router/product.mjs";
 import clientorder from "../router/clientorder.mjs";
-// import ConnectingToMDB from "../connectingToMDB/connecting.mjs";
+import ConnectingToMDB from "../connectingToMDB/connecting.mjs";
 import disconnectFromMD from "../router/disconnectFromMD.mjs";
 import connectingToMD from "../router/connectToMD.mjs";
 
@@ -21,7 +21,7 @@ mainserver.use(clientorder);
 mainserver.use(disconnectFromMD);
 mainserver.use(connectingToMD);
 
-// ConnectingToMDB.ConnectingToMDB.connent();
+ConnectingToMDB.ConnectingToMDB.connent();
 
 mainserver.get("/", (req, res) => {
   console.log("mainserver is running");
