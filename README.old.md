@@ -1,2 +1,0 @@
-# zimer
-Zimer App
