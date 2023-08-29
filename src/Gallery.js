@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-const ZoomControls = ({ onZoomIn, onZoomOut }) => {
+const ZoomControls = ({ onZoomIn, onZoomOut, isZoomed }) => {
   return (
-    <div className="zoom-controls">
+    <div className={`zoom-controls ${isZoomed ? 'zoomed' : ''}`}>
       <button onClick={onZoomIn}>Zoom In</button>
       <button onClick={onZoomOut}>Zoom Out</button>
     </div>
@@ -22,13 +22,24 @@ const Gallery = ({ images }) => {
   const [zoom, setZoom] = useState(1);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const handleZoomIn = () => {
-    setZoom(zoom + 0.1);
+  const handleZoom = (newZoom) => {
+    setZoom(newZoom);
+    if (newZoom > 1) {
+      document.querySelector('.zoom-controls').classList.add('zoomed');
+    } else {
+      document.querySelector('.zoom-controls').classList.remove('zoomed');
+    }
   };
 
+  const handleZoomIn = () => {
+    const newZoom = zoom + 0.1;
+    setZoom(newZoom);
+  };
+  
   const handleZoomOut = () => {
     if (zoom > 0.1) {
-      setZoom(zoom - 0.1);
+      const newZoom = zoom - 0.1;
+      setZoom(newZoom);
     }
   };
 
@@ -51,7 +62,7 @@ const Gallery = ({ images }) => {
         />
       </div>
       <div className="controls-container">
-        <ZoomControls onZoomIn={handleZoomIn} onZoomOut={handleZoomOut} />
+        <ZoomControls onZoomIn={() => handleZoom(zoom + 0.1)} onZoomOut={() => handleZoom(zoom - 0.1)} isZoomed={zoom > 1} />
         <ScrollControls onScrollLeft={handleScrollLeft} onScrollRight={handleScrollRight} />
       </div>
     </div>
