@@ -31,17 +31,7 @@ const Gallery = ({ images }) => {
     }
   };
 
-  const handleZoomIn = () => {
-    const newZoom = zoom + 0.1;
-    setZoom(newZoom);
-  };
   
-  const handleZoomOut = () => {
-    if (zoom > 0.1) {
-      const newZoom = zoom - 0.1;
-      setZoom(newZoom);
-    }
-  };
 
   const handleScrollLeft = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : prevIndex));
@@ -56,7 +46,7 @@ const Gallery = ({ images }) => {
       <div className="gallery-container" style={{ transform: `scale(${zoom})` }}>
         <img
           src={images[currentImageIndex]}
-          alt={`Image ${currentImageIndex}`}
+          alt={`${currentImageIndex}`}
           className="gallery-image"
           style={{ maxWidth: '100%', maxHeight: '100%', width: 'auto', height: 'auto' }}
         />

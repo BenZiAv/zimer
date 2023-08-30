@@ -12,15 +12,42 @@ const LoginForm = () => {
     setPassword(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Here you can perform your login logic, such as sending the username and password to an API
-    console.log('Username:', username);
-    console.log('Password:', password);
-    // Reset the form
-    setUsername('');
-    setPassword('');
+  
+    // Prepare the data to send to the API
+    const data = {
+      username: username,
+      password: password,
+    };
+  
+    try {
+      const response = await fetch('http://localhost:3000', 
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+  
+      if (response.ok) {
+        // Successful login
+        const responseData = await response.json();
+        console.log('Login successful:', responseData);
+        // Reset the form
+        setUsername('');
+        setPassword('');
+      } else {
+        // Error handling for unsuccessful login
+        console.log('Login failed');
+      }
+    } catch (error) {
+      // Handle fetch errors
+      console.error('An error occurred:', error);
+    }
   };
+  
 
   return (
     <form onSubmit={handleSubmit} className='form'> <h1 className='h1_login'>Manager Login</h1>

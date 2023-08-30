@@ -3,6 +3,7 @@ import About from './About';
 import LoginForm from './Login';
 import Gallery from './Gallery';
 import Contact from './Contact';
+import RateUs from './RateUs';
 
 const images = [
   'https://my.weekend.co.il/Templates/customerimages/20524/gallery/image_20524_6be150a25cfb4f5fa11648fce41314f1.jpg',
@@ -29,7 +30,7 @@ const SourceComponent = ({ setIsNavOpen, setContent }) => {
         setContent(<span className='contact'><Contact/></span>);
         break;
       case 'rate_us':
-        setContent(<span>Rate Us Content</span>);
+        setContent(<span><RateUs/></span>);
         break;
       default:
         setContent(null);
