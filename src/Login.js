@@ -35,16 +35,19 @@ const LoginForm = () => {
         // Successful login
         const responseData = await response.json();
         console.log('Login successful:', responseData);
+        alert("Login successful");
         // Reset the form
         setUsername('');
         setPassword('');
       } else {
         // Error handling for unsuccessful login
         console.log('Login failed');
+        alert("Login failed");
       }
     } catch (error) {
       // Handle fetch errors
       console.error('An error occurred:', error);
+      alert("An error occurred");
     }
   };
   
