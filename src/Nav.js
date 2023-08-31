@@ -79,10 +79,3 @@ const Nav = ({ setActivePage }) => {
 };
 
 export default Nav;
-
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://sray1985:Aa036572501@zimer1.wod9dje.mongodb.net/zimer', {
+mongoose.connect('mongodb+srv://sray1985:Aa036572501!@zimer1.wod9dje.mongodb.net/', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
@@ -21,4 +21,3 @@ const todoSchema = new mongoose.Schema({
 const Todo = mongoose.model('Todo', todoSchema);
 
 module.exports = Todo;
-
