@@ -1,7 +1,13 @@
-import React from 'react';
+import { render } from '@testing-library/react';
+import React,{Component} from 'react';
+import { Component } from 'react';
 
-const Contact = ({ activePage }) => {
-    
+
+class contact extends Component{
+     Contact = ({ activePage }) => {
+
+        render()
+   
     return (
         <div className="contact">
             <h2>Ben Avnilov</h2>
@@ -13,6 +19,8 @@ const Contact = ({ activePage }) => {
             <h4>Phone : <a href="tel:+972525327377">+972525327377</a></h4>
         </div>
     )
-};
+    }  
+     }
+
 
 export default Contact;
