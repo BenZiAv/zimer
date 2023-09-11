@@ -1,10 +1,9 @@
-<<<<<<< HEAD
+
 import { render } from '@testing-library/react';
 import React,{Component} from 'react';
 //import { Component } from 'react';
-=======
 import React from 'react';
->>>>>>> parent of 58e8eb0 (x)
+import React from 'react';
 
 const Contact = ({ activePage }) => {
     
