@@ -5,15 +5,15 @@ const OurZimers = ({ activePage }) => {
   const bnbUnits = [
     { 
       id: 1, 
-      name: 'B&B Unit 1', 
+      name: 'Family Unit #1',  
       image: 'https://www.afristay.com/media/thumbnails/pictures/places/257/91190.jpg.1366x768_q85_crop_upscale.jpg', 
       description: 'Family unit included 2 bedrooms, one living room, full kitchen, jacuzzi, swimming pool, and two shower rooms.' 
     },
     { 
       id: 2, 
-      name: 'B&B Unit 2', 
+      name: 'Family Unit #2', 
       image: '', 
-      description: '' 
+      description: 'Family unit included 2 bedrooms, one living room, full kitchen, jacuzzi, swimming pool, and two shower rooms.' 
     },
     { 
       id: 3, 

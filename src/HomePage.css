@@ -106,11 +106,13 @@
 .units_grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Four equal columns */
-  gap: 20px; /* Adjust the gap between grid items */
+  gap: 5px; /* Adjust the gap between grid items */
 }
 
 .unit_item {
-  border: 1px solid #ccc;
+  background-color: grey;   
+  opacity: 75%;
+  border: 1px solid grey;
   padding: 10px;
   text-align: center;
 }
