@@ -90,18 +90,37 @@
   color: black;
   border-style: hidden;
 }
-
-.about{
+/* OurZimers */
+.our_zimers{
   text-align: center;
   color: white;
   text-shadow: 2px 5px 8px chartreuse;
 }
 
-.h1_about{
+.h1_our_zimers{
   color: white;
   text-shadow: 2px 2px 8px chartreuse;
   text-decoration: underline;
 }
+
+.units_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+  gap: 20px; /* Adjust the gap between grid items */
+}
+
+.unit_item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.unit_item img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* */
 
 .header {
   text-shadow: 2px 3px 10px white;
