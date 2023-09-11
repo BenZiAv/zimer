@@ -1,13 +1,13 @@
+<<<<<<< HEAD
 import { render } from '@testing-library/react';
 import React,{Component} from 'react';
 //import { Component } from 'react';
+=======
+import React from 'react';
+>>>>>>> parent of 58e8eb0 (x)
 
-
-class contact extends Component{
-     Contact = ({ activePage }) => {
-
-        render()
-   
+const Contact = ({ activePage }) => {
+    
     return (
         <div className="contact">
             <h2>Ben Avnilov</h2>
@@ -19,8 +19,6 @@ class contact extends Component{
             <h4>Phone : <a href="tel:+972525327377">+972525327377</a></h4>
         </div>
     )
-    }  
-     }
-
+};
 
 export default Contact;
