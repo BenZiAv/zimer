@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const db = require("./db/mongoConect");
 
 const app = express();
 const port = 3001;

@@ -1,7 +1,7 @@
 
 import { render } from '@testing-library/react';
 import React,{Component} from 'react';
-//import { Component } from 'react';
+
 
 
 const Contact = ({ activePage }) => {
