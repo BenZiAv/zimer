@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import About from './About';
+import OurZimers from './OurZimers';
 import LoginForm from './Login';
 import Gallery from './Gallery';
 import Contact from './Contact';
@@ -20,8 +20,8 @@ const SourceComponent = ({ setIsNavOpen, setContent }) => {
       case 'login':
         setContent(<span className='login'><LoginForm/></span>);
         break;
-      case 'about':
-        setContent(<span className='about'><About/></span>);
+      case 'our_zimers':
+        setContent(<span className='our_zimers'><OurZimers/></span>);
         break;
       case 'gallery':
         setContent(<span className='gallery'><Gallery images={images} /></span>);
@@ -43,8 +43,8 @@ const SourceComponent = ({ setIsNavOpen, setContent }) => {
       <button id='login' className='btn_ul' onClick={() => handlePageClick('login')}>
         Login
       </button>
-      <button id='about' className='btn_ul' onClick={() => handlePageClick('about')}>
-        About
+      <button id='our_zimers' className='btn_ul' onClick={() => handlePageClick('our_zimers')}>
+        Our Zimers
       </button>
       <button id='gallery' className='btn_ul' onClick={() => handlePageClick('gallery')}>
         Gallery
