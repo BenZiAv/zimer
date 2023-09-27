@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
 
 const RateUs = () => {
-  const [rating, setRating] = useState(0); // State to keep track of the selected rating
+  const [rating, setRating] = useState(0);
+
   const handleRatingClick = (selectedRating) => {
     setRating(selectedRating);
   };
+
   const handleSubmitRating = () => {
     if (rating > 0) {
-      // Here you can implement logic to submit the rating to a server or perform other actions
+      // Display an alert with the submitted rating
       alert(`You submitted a rating of ${rating} stars!`);
+    } else {
+      alert('Please select a rating before submitting.');
     }
   };
 
