@@ -23,6 +23,11 @@ const HomePage = () => {
     <div className='body1'>
       <Header className="header" />
       {/* <Footer className="footer" /> */ }
+      {serverData && (
+        <div>
+          <p>מידע מהשרת: {serverData.message}</p>
+        </div>
+      )}
     </div>
   );
 };
