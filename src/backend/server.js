@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const db = require("./db/mongoConect");
 
 const app = express();
-const port = 3001;
+const port = 3000;
 
 // Middleware
 app.use(bodyParser.json());
