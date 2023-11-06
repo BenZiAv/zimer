@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 import Header from './Header';
 //import Footer from './Footer';
 import './HomePage.css';
-import axios from 'axios';
+//import axios from 'axios';
 
 
 const HomePage = () => {
   const [serverData, setServerData] = useState(null);
 
-  useEffect(() => {
+ /* useEffect(() => {
     // בכניסה לעמוד, שלח בקשה לשרת
     axios.get('/api/data')
       .then(response => {
@@ -17,7 +17,7 @@ const HomePage = () => {
       .catch(error => {
         console.error(error);
       });
-  }, []);
+  }, []);*/
 
   return (
     <div className='body1'>
