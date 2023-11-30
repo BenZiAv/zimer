@@ -2,7 +2,7 @@
 const express = require("express");
 const path = require("path");
 
-const db = require("./backend/db");
+const db = require("./backend/mongoConect");
 const {routesInit,originCorsAccess} = require("./");
 
 
