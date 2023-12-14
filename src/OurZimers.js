@@ -19,13 +19,13 @@ const OurZimers = ({ activePage }) => {
       id: 3, 
       name: 'B&B Unit 3', 
       image: 'https://media.istockphoto.com/id/509553708/photo/tropical-modern-villa-exterior.jpg?s=612x612&w=0&k=20&c=rMmOmihiXHl6htuhYVzbfPdKAawYHFuNMhD32A0sWUg=', 
-      description: '' 
+      description: 'Family unit included 2 bedrooms, one living room, full kitchen, jacuzzi, swimming pool, and two shower rooms.' 
     },
     { 
       id: 4, 
       name: 'B&B Unit 4', 
       image: 'https://media.istockphoto.com/id/1281220530/photo/woman-tourist-relaxing-near-luxury-swimming-pool-in-hotel.jpg?s=1024x1024&w=is&k=20&c=OC0KixHV9We8w5BIV9wehvXhfXezJ8Z7dfbj-BS9mHI=', 
-      description: '' 
+      description: 'Family unit included 2 bedrooms, one living room, full kitchen, jacuzzi, swimming pool, and two shower rooms.' 
     },
     // Add more units as needed
   ];
